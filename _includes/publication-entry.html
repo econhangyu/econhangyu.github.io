@@ -1,37 +1,19 @@
 {% comment %}
-Compact publication entry. Expects entry in the variable `post`.
-Default view: title on line 1, meta (authors, venue, year, links) inline on line 2.
-If `description` or `image` is set, wraps in a <details> block for per-entry expand.
+Single publication entry. Expects the entry in the variable `post`.
+Title is a hyperlink to the PDF (or `link` field if no PDF). Additional
+resources appear on hover next to the meta line. The "more" toggle
+uses a native HTML <details> element and renders inline.
 {% endcomment %}
 
-<div class="pub-entry">
-  <div class="pub-head">
-    <span class="pub-title">{{ post.title }}</span>
-    <span class="pub-meta">
-      <span class="pub-authors">{{ post.authors }}</span>{% if post.venue %} · <span class="pub-venue">{{ post.venue }}</span>{% endif %}{% if post.year %} · <span class="pub-year">{{ post.year }}</span>{% endif %}{% if post.status %} · <span class="pub-status"><em>{{ post.status }}</em></span>{% endif %}
-    </span>
-    {% if post.pdf or post.journal_link or post.replication or post.media or post.registry or post.registry2 or post.data_link or post.tech_doc or post.link %}
-    <span class="pub-links">
-      {% if post.pdf %}<a href="{{ post.pdf }}">PDF</a>{% endif %}
-      {% if post.link %}<a href="{{ post.link }}">Link</a>{% endif %}
-      {% if post.journal_link %}<a href="{{ post.journal_link }}">Journal</a>{% endif %}
-      {% if post.replication %}<a href="{{ post.replication }}">Replication</a>{% endif %}
-      {% if post.media %}<a href="{{ post.media }}">{{ post.media_label | default: "Media" }}</a>{% endif %}
-      {% if post.registry %}<a href="{{ post.registry }}">{{ post.registry_label | default: "Registry" }}</a>{% endif %}
-      {% if post.registry2 %}<a href="{{ post.registry2 }}">{{ post.registry2_label | default: "AEA registry" }}</a>{% endif %}
-      {% if post.data_link %}<a href="{{ post.data_link }}">Data</a>{% endif %}
-      {% if post.tech_doc %}<a href="{{ post.tech_doc }}">Technical documentation</a>{% endif %}
-    </span>
-    {% endif %}
-  </div>
+{% assign has_extras = false %}
+{% if post.replication or post.media or post.registry or post.registry2 or post.data_link or post.tech_doc or post.journal_link %}{% assign has_extras = true %}{% endif %}
 
-  {% if post.description or post.image %}
-  <details class="pub-details">
-    <summary><span class="pub-more">more</span><span class="pub-less">less</span></summary>
-    <div class="pub-expanded">
-      {% if post.image %}<img src="{{ post.image }}" alt="{{ post.image_alt | default: post.title }}" class="pub-image" />{% endif %}
-      {% if post.description %}<p class="pub-description">{{ post.description }}</p>{% endif %}
-    </div>
-  </details>
-  {% endif %}
-</div>
+<li class="pub-entry">
+  <div class="pub-line">
+    {% if post.pdf %}<a href="{{ post.pdf }}" class="pub-title-link">{{ post.title }}</a>{% elsif post.link %}<a href="{{ post.link }}" class="pub-title-link">{{ post.title }}</a>{% else %}<span class="pub-title-plain">{{ post.title }}</span>{% endif %}.
+    {{ post.authors }}.
+    {% if post.venue %}{{ post.venue | markdownify | remove: '<p>' | remove: '</p>' }}.{% endif %}
+    {% if post.year %}{{ post.year }}.{% endif %}
+    {% if post.status %}<span class="pub-status"><em>{{ post.status }}</em>.</span>{% endif %}{% if has_extras %}<span class="pub-hover-links">{% if post.journal_link %}<a href="{{ post.journal_link }}">journal</a>{% endif %}{% if post.replication %}<a href="{{ post.replication }}">replication</a>{% endif %}{% if post.media %}<a href="{{ post.media }}">{{ post.media_label | default: "media" }}</a>{% endif %}{% if post.registry %}<a href="{{ post.registry }}">{{ post.registry_label | default: "registry" }}</a>{% endif %}{% if post.registry2 %}<a href="{{ post.registry2 }}">{{ post.registry2_label | default: "AEA registry" }}</a>{% endif %}{% if post.data_link %}<a href="{{ post.data_link }}">data</a>{% endif %}{% if post.tech_doc %}<a href="{{ post.tech_doc }}">docs</a>{% endif %}</span>{% endif %}{% if post.description or post.image %}<details class="pub-details"><summary><span class="pub-more">[more]</span><span class="pub-less">[less]</span></summary><div class="pub-expanded">{% if post.image %}<img src="{{ post.image }}" alt="" class="pub-image" />{% endif %}{% if post.description %}<p class="pub-description">{{ post.description }}</p>{% endif %}</div></details>{% endif %}
+  </div>
+</li>

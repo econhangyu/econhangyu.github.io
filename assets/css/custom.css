@@ -1,108 +1,116 @@
-/* Custom site styles. Loaded after the theme's main.css via _includes/head.html. */
+/* Custom site styles. Loaded after main.css via _includes/head.html. */
 
-/* --- Research page --- */
+/* --- Publication list containers --- */
 
-.research-note {
-  font-size: 0.85em;
-  color: #888;
-  font-style: italic;
-  margin-bottom: 1.5em;
+ol.pub-list,
+ul.pub-list {
+  padding-left: 1.4em;
+  margin: 0.5em 0 1.5em 0;
 }
 
-/* --- Publication entries (compact) --- */
+ul.pub-list.pub-list-unnumbered {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.pub-list.pub-list-unnumbered .pub-entry::before {
+  content: "– ";
+  color: #aaa;
+  margin-right: 0.2em;
+}
+
+ol.pub-list li::marker {
+  color: #888;
+  font-size: 0.9em;
+}
 
 .pub-entry {
-  margin: 0 0 0.9em 0;
-  padding: 0 0 0.7em 0;
-  border-bottom: 1px solid #eee;
+  margin: 0 0 0.55em 0;
+  line-height: 1.55;
 }
 
-.pub-entry:last-of-type {
-  border-bottom: none;
+.pub-line {
+  font-size: 0.95em;
+  color: #333;
 }
 
-.pub-head {
-  line-height: 1.45;
+/* Title rendered as plain (non-bold) hyperlink. */
+.pub-title-link {
+  color: #0a2540;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dotted #0a2540;
 }
 
-.pub-title {
-  font-weight: 600;
-  font-size: 1em;
-  color: #222;
-  display: block;
-  margin-bottom: 0.15em;
+.pub-title-link:hover {
+  color: #0969da;
+  border-bottom-color: #0969da;
 }
 
-.pub-meta {
-  font-size: 0.88em;
-  color: #555;
+.pub-title-plain {
+  color: #333;
+  font-weight: 500;
 }
 
-.pub-meta .pub-authors {
-  color: #444;
-}
-
-.pub-meta .pub-venue {
-  color: #555;
-}
-
-.pub-meta .pub-year {
-  color: #777;
-}
-
-.pub-meta .pub-status em {
-  color: #666;
-  font-style: italic;
-}
-
-.pub-links {
+/* Hover-revealed extras (replication, registry, media, etc.) */
+.pub-hover-links {
+  display: inline-flex;
+  gap: 0.4em;
+  margin-left: 0.5em;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
   font-size: 0.82em;
-  margin-left: 0.4em;
+  vertical-align: baseline;
 }
 
-.pub-links a {
-  display: inline-block;
-  margin-right: 0.3em;
-  padding: 1px 7px;
+.pub-entry:hover .pub-hover-links,
+.pub-entry:focus-within .pub-hover-links {
+  opacity: 1;
+}
+
+.pub-hover-links a {
+  color: #555;
+  text-decoration: none;
+  padding: 1px 6px;
   border: 1px solid #d0d7de;
   border-radius: 3px;
-  text-decoration: none;
-  color: #0969da;
   background: #f6f8fa;
-  line-height: 1.5;
 }
 
-.pub-links a:hover {
-  background: #eef2f7;
+.pub-hover-links a:hover {
+  color: #0969da;
   border-color: #0969da;
+  background: #eef2f7;
 }
 
-/* --- Expand/collapse details element --- */
+/* Touch devices: always show the extras since there's no hover. */
+@media (hover: none) {
+  .pub-hover-links { opacity: 1; }
+}
+
+/* --- Inline more/less toggle --- */
 
 details.pub-details {
-  margin-top: 0.35em;
+  display: inline;
+  margin-left: 0.5em;
 }
 
 details.pub-details summary {
+  display: inline;
   list-style: none;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 0.82em;
   color: #888;
-  padding: 0.15em 0;
-  display: inline-block;
   user-select: none;
 }
 
-details.pub-details summary::-webkit-details-marker {
+details.pub-details summary::-webkit-details-marker,
+details.pub-details summary::marker {
   display: none;
 }
 
 details.pub-details summary:hover {
   color: #0969da;
-}
-
-details.pub-details summary .pub-more::before {
-  content: "▸ ";
 }
 
 details.pub-details summary .pub-less {
@@ -117,12 +125,9 @@ details.pub-details[open] summary .pub-less {
   display: inline;
 }
 
-details.pub-details[open] summary .pub-less::before {
-  content: "▾ ";
-}
-
 .pub-expanded {
-  margin-top: 0.45em;
+  display: block;
+  margin-top: 0.5em;
   padding: 0.7em 0.9em;
   background: #f9f9f9;
   border-left: 3px solid #d0d7de;
@@ -143,7 +148,7 @@ details.pub-details[open] summary .pub-less::before {
   margin: 0;
 }
 
-/* --- Research page section headers --- */
+/* --- Page headers --- */
 
 .page__content h2 {
   margin-top: 1.8em;
@@ -156,8 +161,15 @@ details.pub-details[open] summary .pub-less::before {
   margin-top: 1.2em;
   padding-bottom: 0.15em;
   border-bottom: 1px solid #ccc;
-  font-size: 1.1em;
-  color: #444;
+  font-size: 1.05em;
+  color: #555;
+}
+
+/* --- Teaching page tightening --- */
+
+.page__content ul {
+  margin-top: 0.3em;
+  margin-bottom: 0.8em;
 }
 
 /* --- Gallery --- */
@@ -183,15 +195,11 @@ details.pub-details[open] summary .pub-less::before {
 }
 
 @media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
+  .gallery-grid { grid-template-columns: 1fr; }
 }
 
 .gallery-item {

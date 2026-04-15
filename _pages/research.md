@@ -6,46 +6,37 @@ author_profile: true
 
 I study how behavioral constraints and program delivery shape economic outcomes in poverty, using randomized field experiments in Sub-Saharan Africa. Recent work also examines how artificial intelligence is reshaping labor markets and hiring.
 
-<p class="research-note">Click any entry below to expand a short description and related image.</p>
-
 ## Peer-Reviewed Journal Articles
 
+<ol class="pub-list">
 {% assign pubs = site.publications | where: "category", "published" | sort: "year" | reverse %}
-{% for post in pubs %}
-  {% include publication-entry.html post=post %}
-{% endfor %}
+{% for post in pubs %}{% include publication-entry.html post=post %}{% endfor %}
+</ol>
 
-### Peer-Reviewed Journal Articles in Chinese
+### In Chinese
 
+<ol class="pub-list pub-list-secondary">
 {% assign pubs_cn = site.publications | where: "category", "published_cn" | sort: "year" | reverse %}
-{% for post in pubs_cn %}
-  {% include publication-entry.html post=post %}
-{% endfor %}
+{% for post in pubs_cn %}{% include publication-entry.html post=post %}{% endfor %}
+</ol>
 
 ### Edited Volumes
 
+<ul class="pub-list pub-list-unnumbered">
 {% assign volumes = site.publications | where: "category", "edited" | sort: "year" | reverse %}
-{% for post in volumes %}
-  {% include publication-entry.html post=post %}
-{% endfor %}
+{% for post in volumes %}{% include publication-entry.html post=post %}{% endfor %}
+</ul>
 
 ## Working Papers
 
+<ul class="pub-list pub-list-unnumbered">
 {% assign wps = site.publications | where: "category", "working" | sort: "year" | reverse %}
-{% for post in wps %}
-  {% include publication-entry.html post=post %}
-{% endfor %}
+{% for post in wps %}{% include publication-entry.html post=post %}{% endfor %}
+</ul>
 
-## Works in Progress
+## Selected Works in Progress
 
+<ul class="pub-list pub-list-unnumbered">
 {% assign wips = site.publications | where: "category", "wip" | sort: "sort_order" %}
-{% for post in wips %}
-  {% include publication-entry.html post=post %}
-{% endfor %}
-
-## Writing for General Audiences
-
-{% assign popular = site.publications | where: "category", "popular" | sort: "year" | reverse %}
-{% for post in popular %}
-  {% include publication-entry.html post=post %}
-{% endfor %}
+{% for post in wips %}{% include publication-entry.html post=post %}{% endfor %}
+</ul>
