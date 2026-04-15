@@ -1,12 +1,9 @@
 /* Custom site styles. Loaded after main.css via _includes/head.html. */
 
-/* --- Modern font (Inter) --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* --- Academic font pairing: Crimson Pro (body) + Inter (UI/headings) --- */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
-body,
-.page,
-.page__content,
-.page__title,
+/* Inter for navigation, sidebar, and UI elements */
 .sidebar,
 .masthead,
 .author__name,
@@ -20,9 +17,49 @@ button,
 select,
 textarea {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  font-feature-settings: 'cv11', 'ss01';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Crimson Pro for page body content */
+body,
+.page,
+.page__content,
+.page__title,
+.page__content p,
+.page__content li {
+  font-family: 'Crimson Pro', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Inter for in-page headings — gives a clean modern accent against the serif body */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__title {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Page body type scale: smaller, looser line height for clean breathing room */
+body {
+  font-size: 17px;
+}
+
+.page__content {
+  font-size: 0.93em;
+  line-height: 1.72;
+}
+
+.page__content p {
+  margin-bottom: 1em;
+}
+
+.page__content li {
+  line-height: 1.62;
 }
 
 
@@ -60,17 +97,21 @@ ol.pub-list li::marker {
   color: #333;
 }
 
-/* Title rendered as plain (non-bold) hyperlink. */
+/* Title rendered as plain (non-bold) hyperlink — no underline at rest. */
+.page__content .pub-entry .pub-title-link,
 .pub-title-link {
   color: #0a2540;
   text-decoration: none;
+  border-bottom: none !important;
   font-weight: 500;
-  border-bottom: 1px dotted #0a2540;
 }
 
+.page__content .pub-entry .pub-title-link:hover,
 .pub-title-link:hover {
   color: #0969da;
-  border-bottom-color: #0969da;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .pub-title-plain {
