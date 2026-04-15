@@ -1,101 +1,283 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# econhangyu.com — Personal Academic Website
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+Personal website of **Hang Yu**, Assistant Professor of Economics at the National School of Development, Peking University. Development economist; field experiments in Sub-Saharan Africa.
 
-# Getting Started
+Public URL (once DNS is migrated): `https://econhangyu.com`
+Build URL (GitHub Pages default): `https://econhangyu.github.io`
+GitHub repo: `https://github.com/econhangyu/econhangyu.github.io`
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
-
-### Additional Tutorials
-
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
-```
-
-You should now be able to access the website from `localhost:4000`.
-
-### Using the DevContainer in VS Code
-
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii), and additional maintainers would be welcome.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of the template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize, although [rebasing](https://git-scm.com/docs/git-rebase) the changes from this template will work along with manually [cherry picking](https://git-scm.com/docs/git-cherry-pick) the relevant commits. If you are not comfortable with the Git command line, you can save your various `.yml` configuration files and Markdown files, delete the repository, and fork it again. 
+This README documents the key decisions, architecture, and maintenance workflow for this site. **Read this file first** if you are the author returning after a break, or an AI assistant picking up the project mid-stream.
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## Current status (as of 2026-04-15)
+
+**Phase: Skeleton deployed, architecture approved, content migration not yet started.**
+
+- [x] AcademicPages template cloned into `website/` and stripped of upstream git history
+- [x] Fresh local git repo initialized on `main` branch
+- [x] `.git/` marked `com.dropbox.ignored` to prevent Dropbox/Git conflicts
+- [x] Pre-existing files (`logo/`, `website.docx`) preserved and gitignored
+- [x] Initial commit made and pushed to `github.com/econhangyu/econhangyu.github.io`
+- [x] GitHub Pages enabled; placeholder template is live
+- [x] Peer-site research complete (20 mid-career dev economists surveyed)
+- [x] Design principles confirmed with author
+- [x] Site architecture approved
+- [ ] `_config.yml` customized (site name, bio, nav, socials)
+- [ ] Unused collections removed (`_talks/`, `_posts/`, `_drafts/`, default `_portfolio/`)
+- [ ] Nav restructured to 5 items (Home / Research ▾ / Teaching / Gallery / CV)
+- [ ] Research sub-pages created (Publications / Working Papers / Works in Progress)
+- [ ] Custom Publications layout with `<details>`-based expand mechanism
+- [ ] Gallery page with lightbox and country-year grouping
+- [ ] Custom domain `econhangyu.com` wired to GitHub Pages (DNS flip from Google Sites)
+- [ ] Real content migrated from [old Google Site](https://www.econhangyu.com)
+- [ ] Old Google Site kept alive as dormant backup after migration
+
+---
+
+## Key decisions
+
+### Platform
+**AcademicPages** (a Jekyll theme), hosted on **GitHub Pages**, deployed to the custom domain `econhangyu.com`. Chosen over alternatives (al-folio, Quarto, Squarespace, WordPress, Google Sites) after surveying 20 peer sites of mid-career development economists. Rationale:
+
+- Matches the dominant pattern among economists (Dean Yang, Jonathan Weigel, and many others use AcademicPages or similar Jekyll themes).
+- Simpler under the hood than al-folio; easier for a Git beginner to maintain.
+- BibTeX-style publication management via Markdown files, with per-paper category fields — handles the English/Chinese/edited-volume split cleanly.
+- Free, version-controlled, and platform-independent (no vendor lock-in).
+
+### Design principles (approved 2026-04-15)
+
+The author explicitly stated these principles — **respect them when adding new features or proposing changes:**
+
+1. **No thematic grouping of papers.** Author feels the paper count doesn't justify themes. Use plain reverse-chronological order within each sub-page.
+2. **Traditional multi-sub-page structure.** Research has sub-pages, not a single long scroll.
+3. **Clean, minimalist paper listing** with optional per-paper expand to reveal a fieldwork photo, key chart, or longer description. Entries with no expandable content should not show an expand control at all.
+4. **Real gallery design** — the fieldwork gallery is the one place where design effort is warranted. It is the site's distinctive asset; no peer site surveyed has a comparable gallery.
+5. **Everything else: traditional, restrained.** Follow Dean Yang and James Allen IV's lead. Author's exact words: *"making it fancy only serves to shame myself."* No hero videos, animations, accent colors beyond default link blue, custom fonts, or visual flourishes.
+
+### Architecture
+
+**Top-level navigation (5 items):**
+
+```
+Home  |  Research ▾  |  Teaching  |  Gallery  |  CV
+```
+
+- **Home**: headshot + short bio (2–3 sentences) + "Recent" news list (5–7 bullets) + contact links row (Scholar, Email, CV, Bluesky, GitHub).
+- **Research**: parent page with a short agenda description (3–4 sentences) and links down to three sub-pages.
+  - **Publications**: peer-reviewed journal articles (English + Chinese) + edited volumes, reverse chronological.
+  - **Working Papers**: WP with PDFs, R&R status, trial registry links, reverse chronological.
+  - **Works in Progress**: titles + coauthors + status, sometimes no PDF.
+- **Teaching**: plain list grouped by level (Undergraduate / Doctoral / MPA), each entry as "Course Name — years taught." No syllabi on the public site.
+- **Gallery**: fieldwork photos, grouped by country-year (Mozambique 2017–2019 / Ethiopia 2023 / Mozambique 2023), responsive grid with click-to-lightbox and full captions.
+- **CV**: direct link to PDF in `files/cv.pdf`. No intermediate page.
+
+**Explicitly removed from default AcademicPages template**: Talks, Portfolio, Blog/Posts, and the default About-page hero layout.
+
+### Publication entry format (the expand mechanism)
+
+Each paper lives as a Markdown file in `_publications/`, with frontmatter:
+
+```yaml
+---
+title: "..."
+authors: "..."
+venue: "..."            # e.g., "Journal of Development Economics, 161: 103035"
+year: 2023
+category: published     # published | chinese | edited | working | wip
+pdf: /files/publications/xxx.pdf
+replication: https://...
+media: https://...      # VoxDev link, etc.
+image: /images/papers/xxx.jpg    # optional: fieldwork photo or chart
+description: |          # optional: 2–4 sentence abstract
+  ...
+---
+```
+
+The custom Publications layout iterates these files and wraps each in a native HTML `<details>` element. Papers without `image:` or `description:` render without an expand control — the design scales naturally from minimal to enriched entries.
+
+**Why `<details>` over JavaScript**: built into HTML, no framework, accessible, works offline, no dependencies. Custom CSS hides the default browser triangle and adds a subtle "▸ more" / "▾ less" indicator.
+
+### Gallery format
+
+- Jekyll collection `_gallery/` with one Markdown file per country-year section.
+- Each section loops over images in `images/gallery/<section-name>/` and renders a responsive CSS grid (3 / 2 / 1 columns on desktop / tablet / mobile).
+- Lightbox: single small JS library (GLightbox or similar, ~10 KB). This is the **only** JS dependency added beyond AcademicPages defaults.
+- Image pipeline: originals stored in `images/gallery/originals/` (gitignored), optimized derivatives stored at `images/gallery/<section>/` (committed). Thumbnails ~600px wide, full-size ~1600px wide, WebP with JPEG fallback.
+
+---
+
+## Directory structure
+
+```
+website/                              ← this folder, Git repo root
+├── .git/                              Git database (Dropbox-ignored)
+├── .gitignore                         Ignores _site/, logo/, website.docx, etc.
+├── README.md                          ← YOU ARE HERE
+├── _config.yml                        Site-wide config (name, bio, nav, socials)
+├── _data/                             Navigation menu, author info, UI strings
+│   ├── navigation.yml
+│   └── authors.yml
+├── _pages/                            Top-level pages
+│   ├── about.md                       Homepage
+│   ├── research.md                    Research landing page
+│   ├── publications.html              Custom layout listing _publications/
+│   ├── working-papers.html            Custom layout listing working papers
+│   ├── works-in-progress.html         Custom layout listing WIP
+│   ├── teaching.md                    Teaching list
+│   └── gallery.html                   Gallery with lightbox
+├── _publications/                     One .md per paper
+├── _gallery/                          One .md per country-year section
+├── _includes/                         Theme partials (nav, footer, head)
+├── _layouts/                          Theme page skeletons
+├── _sass/                             Theme stylesheets (SCSS)
+├── assets/                            Compiled CSS/JS
+├── files/                             Public-facing PDFs (CV, papers)
+│   ├── cv.pdf
+│   ├── publications/*.pdf
+│   └── working-papers/*.pdf
+├── images/                            Public-facing images
+│   ├── headshot.jpg
+│   ├── papers/                        Per-paper images for expand view
+│   └── gallery/                       Fieldwork photos
+│       ├── originals/                 Unoptimized masters (gitignored)
+│       ├── mozambique-2017-2019/
+│       ├── ethiopia-2023/
+│       └── mozambique-2023/
+├── logo/                              Pre-existing, gitignored, not published
+└── website.docx                       Pre-existing, gitignored, not published
+```
+
+**Removed from the cloned template** (explicitly, because they're not used):
+- `_posts/`, `_drafts/`, `_talks/` collections
+- `talkmap.py`, `talkmap.ipynb`, `talkmap_out.ipynb`, `talkmap/`
+- `markdown_generator/` (the BibTeX-to-Markdown script — we're writing Markdown files by hand)
+- `.devcontainer/`, `Dockerfile`, `docker-compose.yaml` (we don't need containerized dev)
+
+---
+
+## Dropbox + Git coexistence
+
+**This repo lives inside a Dropbox folder** at `/Users/hangyu/Library/CloudStorage/Dropbox/_professional documents/website/`. This is deliberate — the author keeps all working materials in Dropbox and wants this project proximate to sibling folders (`CVs/`, `papers/`, etc.).
+
+To prevent Dropbox from corrupting the Git database, the `.git/` directory has the macOS extended attribute `com.dropbox.ignored = 1` set. This tells Dropbox to skip it entirely. Set once, persists across machines, set via:
+
+```bash
+xattr -w com.dropbox.ignored 1 ".git"
+```
+
+**If you ever re-clone this repo** (e.g., on a new machine, or after deleting and re-downloading from GitHub), you must **re-run that `xattr` command** on the fresh `.git/` folder. Otherwise Dropbox will start syncing Git internals, which can cause subtle corruption across machines. The same applies to any new nested Git repo you might create inside `website/`.
+
+Verify the flag is in place with:
+```bash
+xattr -l .git
+# should show: com.dropbox.ignored: 1
+```
+
+Content files in the repo (`_publications/*.md`, `images/*`, etc.) **are** synced by Dropbox, which gives you a free backup. Git manages version history via GitHub.
+
+---
+
+## Relationship to sibling folders
+
+The repo is **self-contained** — everything published on the site must live inside `website/`. But the sibling folders (`CVs/`, `papers/`, `statements/`, `photos/`, etc.) serve as **source-of-truth working materials**. The flow is:
+
+| Source of truth (sibling folder) | What flows into the repo | Destination inside `website/` |
+|---|---|---|
+| `CVs/CV_eng 202604.docx` | Exported PDF | `files/cv.pdf` |
+| `papers/1-publications/*.pdf` | Individual PDFs | `files/publications/*.pdf` |
+| `papers/2-working papers/*.pdf` | Current WP versions | `files/working-papers/*.pdf` |
+| `photos/headshot/` | Cropped + resized headshot | `images/headshot.jpg` |
+| `photos/` (fieldwork photos) | Optimized derivatives | `images/gallery/<section>/*.webp` |
+
+**Do not symlink across this boundary** — GitHub Pages builds on GitHub's servers where sibling folders don't exist. Duplication is the correct answer. It also enforces a clean "private working / public published" distinction.
+
+When updating a file: edit the source, export/optimize if needed, copy into `website/`, commit, push.
+
+---
+
+## Maintenance workflow
+
+The author uses **GitHub Desktop** (not command-line Git). All routine updates should go through this visual workflow.
+
+### Routine content update (new PDF, fixed typo, new publication entry)
+
+1. Edit or add the relevant file in the `website/` folder using any editor (VS Code, plain text editor, even Finder for drag-and-drop of PDFs and images).
+2. Open GitHub Desktop. It shows the changed files in the left panel.
+3. Type a one-line commit summary at the bottom-left (e.g., `Add 2026 working paper PDF` or `Fix typo in bio`).
+4. Click **Commit to main**.
+5. Click **Push origin** at the top.
+6. Wait 1–3 minutes. GitHub Actions rebuilds the site; the new version is live.
+
+Verify build success in the repo's **Actions** tab on GitHub.com. A green check = live; red X = build failure (click in to see the error).
+
+### Adding a new publication
+
+1. Create a new Markdown file in `_publications/` named like `2026-paper-short-title.md`.
+2. Copy frontmatter from an existing file in the same category; fill in title, authors, venue, year, pdf, category.
+3. Drop the PDF into `files/publications/`.
+4. Optional: drop an image into `images/papers/`, add `image:` and `description:` frontmatter fields. This triggers the expand control.
+5. Commit and push as above.
+
+### Adding a new gallery section
+
+1. Create a subfolder in `images/gallery/originals/` with the new country-year name; drop in the full-resolution photos.
+2. Run the image optimization command (documented in `scripts/optimize-gallery.sh` once created) to produce the web-ready versions in `images/gallery/<section>/`.
+3. Create a new Markdown file in `_gallery/` with the section title and caption metadata.
+4. Commit and push.
+
+### Design/layout change
+
+Design changes affect many visitors at once, so use a branch to preview before merging:
+
+1. In GitHub Desktop: **Branch → New Branch**, name it something like `design-tweak-accent-color`.
+2. Make the edits on that branch, commit, push.
+3. On GitHub.com, open a Pull Request from the branch to `main`.
+4. GitHub Pages builds a preview (check the Actions tab).
+5. Once satisfied, merge the PR; site goes live.
+
+For content edits, the branch workflow is overkill — commit straight to `main`.
+
+### Emergency rollback
+
+Git preserves full history. If a bad change breaks the site:
+
+1. On GitHub.com, find the most recent working commit in the repo's commit list.
+2. Copy its hash.
+3. In GitHub Desktop: **History → right-click the bad commit → Revert this commit**.
+4. Push. The site rebuilds to the previous state within minutes.
+
+---
+
+## For future Claude agents picking this up
+
+**First steps before making any changes:**
+
+1. Read this README completely — it contains the design principles the author explicitly approved. Do not deviate from them without asking.
+2. Check `git log --oneline` to see the most recent commits and understand what phase the project is in.
+3. Check the [Current status](#current-status-as-of-2026-04-15) checklist above to see what has and has not been done. Update it after your session.
+4. Look at [old Google Site](https://www.econhangyu.com) for the source content that will eventually be migrated. It is built on Google Sites and JavaScript-rendered, so WebFetch will capture homepages but not subpages well — ask the author to paste subpage content if needed.
+5. The author's GitHub username is `econhangyu`. The repo must be named exactly `econhangyu.github.io` for GitHub Pages user-site routing to work.
+
+**Important caveats:**
+
+- The author is a **Git beginner** (per their `~/.claude/CLAUDE.md`) but a **Stata expert and Python beginner**. Explain Git concepts when they come up; do not assume familiarity.
+- The author's time is scarce — **do not rebuild from scratch or introduce abstractions beyond what the task requires**. Respect the existing decisions and work incrementally.
+- Do not modify files in sibling folders (`../CVs/`, `../papers/`, etc.) without explicit permission. Those are the author's private working materials.
+- Do not fill in real publication, teaching, or gallery content until the design skeleton is complete and the author has reviewed it. The author explicitly asked to review the design *before* content migration.
+- The author maintains memory at `/Users/hangyu/.claude/projects/.../memory/`. Check there for ongoing context.
+
+**Where to start new work**: look at the first unchecked item in the [Current status](#current-status-as-of-2026-04-15) checklist. That is the active front.
+
+---
+
+## Useful references
+
+- [Peer sites surveyed](https://github.com/econhangyu/econhangyu.github.io/issues) — not yet documented; see conversation history. Key comparables: Dean Yang, James Allen IV, Jonathan Weigel, Gautam Rao, Namrata Kala, Stefano Caria.
+- AcademicPages upstream: https://github.com/academicpages/academicpages.github.io
+- Jekyll docs: https://jekyllrb.com/docs/
+- GitHub Pages docs: https://docs.github.com/en/pages
+
+---
+
+*Last updated: 2026-04-15. Update the status checklist and the "as of" date whenever the project state changes meaningfully.*
