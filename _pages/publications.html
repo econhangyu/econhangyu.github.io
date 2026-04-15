@@ -1,36 +1,30 @@
 ---
-layout: archive
-title: "Publications"
 permalink: /publications/
+title: "Publications"
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p>Peer-reviewed journal articles, reverse chronological. Click <em>more</em> on any entry to expand a short description and related image. Chinese-language publications are listed below the English section.</p>
 
-{% include base_path %}
+<h2 class="pub-section">Peer-Reviewed Journal Articles</h2>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+{% assign pubs = site.publications | where: "category", "published" | sort: "year" | reverse %}
+{% for post in pubs %}
+  {% include publication-entry.html post=post %}
+{% endfor %}
 
+<h2 class="pub-section">Peer-Reviewed Journal Articles (Chinese)</h2>
 
+{% assign pubs_cn = site.publications | where: "category", "published_cn" | sort: "year" | reverse %}
+{% for post in pubs_cn %}
+  {% include publication-entry.html post=post %}
+{% endfor %}
 
+<h2 class="pub-section">Edited Volumes</h2>
+
+{% assign volumes = site.publications | where: "category", "edited" | sort: "year" | reverse %}
+{% for post in volumes %}
+  {% include publication-entry.html post=post %}
+{% endfor %}
+
+<p class="pub-back"><a href="{{ base_path }}/research/">← back to Research</a></p>

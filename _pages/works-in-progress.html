@@ -1,0 +1,14 @@
+---
+permalink: /works-in-progress/
+title: "Works in Progress"
+author_profile: true
+---
+
+<p>Ongoing projects. Entries include coauthors, current status, and funding. Some projects are linked to pre-analysis plans in the AEA Registry.</p>
+
+{% assign wips = site.publications | where: "category", "wip" | sort: "sort_order" %}
+{% for post in wips %}
+  {% include publication-entry.html post=post %}
+{% endfor %}
+
+<p class="pub-back"><a href="{{ base_path }}/research/">← back to Research</a></p>

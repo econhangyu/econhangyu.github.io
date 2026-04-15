@@ -1,0 +1,34 @@
+{% comment %}
+Render a single publication entry. Expects an entry in the variable `post`.
+Default view: title, authors, venue/year, and small links row.
+If `description` or `image` is set, wrap the expanded content in a <details> block.
+{% endcomment %}
+
+<div class="pub-entry">
+  <div class="pub-title">{{ post.title }}</div>
+  <div class="pub-authors">{{ post.authors }}</div>
+  <div class="pub-venue">{% if post.venue %}{{ post.venue }}{% endif %}{% if post.year %}{% if post.venue %}. {% endif %}{{ post.year }}.{% endif %}{% if post.status %} <em>{{ post.status }}</em>.{% endif %}</div>
+
+  {% if post.pdf or post.journal_link or post.replication or post.media or post.registry or post.registry2 or post.data_link or post.tech_doc %}
+  <div class="pub-links">
+    {% if post.pdf %}<a href="{{ post.pdf }}">PDF</a>{% endif %}
+    {% if post.journal_link %}<a href="{{ post.journal_link }}">Journal</a>{% endif %}
+    {% if post.replication %}<a href="{{ post.replication }}">Replication</a>{% endif %}
+    {% if post.media %}<a href="{{ post.media }}">{{ post.media_label | default: "Media" }}</a>{% endif %}
+    {% if post.registry %}<a href="{{ post.registry }}">{{ post.registry_label | default: "Trial registry" }}</a>{% endif %}
+    {% if post.registry2 %}<a href="{{ post.registry2 }}">{{ post.registry2_label | default: "AEA registry" }}</a>{% endif %}
+    {% if post.data_link %}<a href="{{ post.data_link }}">Data</a>{% endif %}
+    {% if post.tech_doc %}<a href="{{ post.tech_doc }}">Technical documentation</a>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if post.description or post.image %}
+  <details class="pub-details">
+    <summary><span class="pub-more">more</span><span class="pub-less">less</span></summary>
+    <div class="pub-expanded">
+      {% if post.image %}<img src="{{ post.image }}" alt="{{ post.image_alt | default: post.title }}" class="pub-image" />{% endif %}
+      {% if post.description %}<p class="pub-description">{{ post.description }}</p>{% endif %}
+    </div>
+  </details>
+  {% endif %}
+</div>

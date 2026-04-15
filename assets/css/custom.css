@@ -1,0 +1,177 @@
+/* Custom site styles. Loaded after the theme's main.css via _includes/head.html. */
+
+/* --- Publication entries --- */
+
+.pub-entry {
+  margin: 0 0 1.75em 0;
+  padding: 0 0 1.25em 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.pub-entry:last-of-type {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.05em;
+  line-height: 1.4;
+  margin-bottom: 0.25em;
+}
+
+.pub-authors {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 0.15em;
+}
+
+.pub-venue {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.4em;
+}
+
+.pub-links {
+  font-size: 0.88em;
+  margin-bottom: 0.3em;
+}
+
+.pub-links a {
+  display: inline-block;
+  margin-right: 0.75em;
+  padding: 2px 8px;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0969da;
+  background: #f6f8fa;
+}
+
+.pub-links a:hover {
+  background: #eef2f7;
+  border-color: #0969da;
+}
+
+/* --- Expand/collapse details element --- */
+
+details.pub-details {
+  margin-top: 0.5em;
+}
+
+details.pub-details summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: #666;
+  padding: 0.2em 0;
+  display: inline-block;
+  user-select: none;
+}
+
+details.pub-details summary::-webkit-details-marker {
+  display: none;
+}
+
+details.pub-details summary:hover {
+  color: #0969da;
+}
+
+details.pub-details summary .pub-more::before {
+  content: "▸ ";
+}
+
+details.pub-details summary .pub-less {
+  display: none;
+}
+
+details.pub-details[open] summary .pub-more {
+  display: none;
+}
+
+details.pub-details[open] summary .pub-less {
+  display: inline;
+}
+
+details.pub-details[open] summary .pub-less::before {
+  content: "▾ ";
+}
+
+.pub-expanded {
+  margin-top: 0.75em;
+  padding: 0.9em 1em;
+  background: #f9f9f9;
+  border-left: 3px solid #d0d7de;
+}
+
+.pub-image {
+  max-width: 100%;
+  max-height: 320px;
+  display: block;
+  margin: 0 auto 0.9em auto;
+  border-radius: 3px;
+}
+
+.pub-description {
+  font-size: 0.95em;
+  line-height: 1.55;
+  color: #333;
+  margin: 0;
+}
+
+/* --- Publications page section headers --- */
+
+h2.pub-section {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #333;
+  font-size: 1.3em;
+}
+
+p.pub-back {
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+/* --- Gallery placeholder styling --- */
+
+.gallery-section-title {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #333;
+  font-size: 1.3em;
+}
+
+.gallery-section-desc {
+  color: #555;
+  font-size: 0.95em;
+  margin-bottom: 1em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-placeholder {
+  background: #f6f8fa;
+  border: 1px dashed #d0d7de;
+  padding: 3em 1em;
+  text-align: center;
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+}

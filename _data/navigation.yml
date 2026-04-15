@@ -1,33 +1,16 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# Top navigation bar.
+# Home is implicit via the site logo/title. "Research" is a landing page that
+# links down to Publications, Working Papers, and Works in Progress sub-pages.
 
 main:
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Talks"
-    url: /talks/    
+  - title: "Research"
+    url: /research/
 
   - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+    url: /teaching/
+
+  - title: "Gallery"
+    url: /gallery/
+
   - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: /files/cv.pdf
