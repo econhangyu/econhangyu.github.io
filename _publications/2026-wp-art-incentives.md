@@ -1,6 +1,6 @@
 ---
 title: "When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence"
-authors: "Arlete Mahumane, Jared Stolove, James Riddell IV, Dean Yang, Hang Yu"
+authors: "Hang Yu ⓡ Jared Stolove ⓡ Dean Yang ⓡ James Riddell IV ⓡ Arlete Mahumane"
 venue: "Working paper"
 year: 2026
 category: working

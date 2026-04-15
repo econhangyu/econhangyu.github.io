@@ -1,7 +1,7 @@
 ---
 title: "Teaching and Incentives: Substitutes or Complements?"
 authors: "James Allen IV, Arlete Mahumane, James Riddell IV, Tanya Rosenblat, Dean Yang, Hang Yu"
-venue: "*Economics of Education Review*, 91: 102317"
+venue: "**Economics of Education Review**, 91: 102317"
 year: 2022
 category: published
 pdf: /files/publications/2022-teaching-incentives.pdf

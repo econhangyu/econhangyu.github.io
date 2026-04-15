@@ -1,7 +1,7 @@
 ---
 title: "Knowledge, Stigma, and HIV Testing: An Analysis of a Widespread HIV/AIDS Program"
 authors: "Dean Yang, James Allen IV, Arlete Mahumane, James Riddell IV, Hang Yu"
-venue: "*Journal of Development Economics*, 160: 102958"
+venue: "**Journal of Development Economics**, 160: 102958"
 year: 2023
 category: published
 pdf: /files/publications/2023-fcc-knowledge-stigma.pdf

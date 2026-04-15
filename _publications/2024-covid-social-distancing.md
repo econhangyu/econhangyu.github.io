@@ -1,7 +1,7 @@
 ---
 title: "Correcting Misperceptions about Support for Social Distancing to Combat COVID-19"
 authors: "James Allen IV, Arlete Mahumane, James Riddell IV, Tanya Rosenblat, Dean Yang, Hang Yu"
-venue: "*Economic Development and Cultural Change*, 73(1): 221–242"
+venue: "**Economic Development and Cultural Change**, 73(1): 221–242"
 year: 2024
 category: published
 pdf: /files/publications/2024-covid-social-distancing.pdf

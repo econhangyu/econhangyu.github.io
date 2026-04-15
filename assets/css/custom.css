@@ -165,11 +165,87 @@ details.pub-details[open] summary .pub-less {
   color: #555;
 }
 
-/* --- Teaching page tightening --- */
+/* --- Teaching page: tight course blocks --- */
 
-.page__content ul {
-  margin-top: 0.3em;
-  margin-bottom: 0.8em;
+.course-block {
+  margin: 0 0 0.9em 0;
+}
+
+.course-block .course-level {
+  font-weight: 600;
+  margin: 0 0 0.15em 0;
+  color: #333;
+  font-size: 0.95em;
+}
+
+ul.course-list {
+  list-style: disc;
+  padding-left: 1.4em;
+  margin: 0;
+}
+
+ul.course-list li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+  font-size: 0.93em;
+}
+
+/* --- CV display page --- */
+
+.cv-actions {
+  display: flex;
+  gap: 0.6em;
+  margin: 0.8em 0 0.4em 0;
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 0.45em 1em;
+  background: #0a2540;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.92em;
+  border: 1px solid #0a2540;
+}
+
+.cv-btn:hover {
+  background: #0969da;
+  border-color: #0969da;
+}
+
+.cv-btn.cv-btn-secondary {
+  background: #fff;
+  color: #0a2540 !important;
+}
+
+.cv-btn.cv-btn-secondary:hover {
+  background: #f6f8fa;
+  color: #0969da !important;
+}
+
+.cv-note {
+  font-size: 0.82em;
+  color: #888;
+  margin: 0.4em 0 0.8em 0;
+}
+
+.cv-embed-wrap {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.cv-embed {
+  width: 100%;
+  height: 1100px;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cv-embed { height: 700px; }
 }
 
 /* --- Gallery --- */

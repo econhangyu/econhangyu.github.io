@@ -1,7 +1,7 @@
 ---
 title: "The Measurement of AI Exposure and Its Impact on Labor Demand in China: Evidence from Large Language Models"
 authors: "Dandan Zhang, Hang Yu, Lixing Li, Jiayin Hu, Yiqing Mo, Hongbo Li"
-venue: "*Management World* (管理世界), 41(07): 59–75 (in Chinese)"
+venue: "**Management World** (管理世界), 41(07): 59–75 (in Chinese)"
 year: 2025
 category: published_cn
 pdf: /files/publications/2025-ai-exposure-china.pdf

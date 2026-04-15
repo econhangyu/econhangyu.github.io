@@ -1,7 +1,7 @@
 ---
 title: "Social Stigma as a Barrier to HIV Testing: Evidence from a Randomized Experiment in Mozambique"
 authors: "Hang Yu"
-venue: "*Journal of Development Economics*, 161: 103035"
+venue: "**Journal of Development Economics**, 161: 103035"
 year: 2023
 category: published
 pdf: /files/publications/2023-stigma-hiv-testing.pdf

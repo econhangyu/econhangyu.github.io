@@ -1,7 +1,7 @@
 ---
 title: "AI and Labor Market Mismatch: Evidence from Matched Vacancy–Applicant Data"
 authors: "Hang Yu, Hongbo Li, Dandan Zhang, Runbo Zhang, Qiang Li"
-venue: "Conditionally accepted at *China Economic Quarterly* (in Chinese)"
+venue: "Conditionally accepted at **China Economic Quarterly** (in Chinese)"
 year: 2026
 category: working
 pdf: /files/working-papers/2026-wp-ai-mismatch.pdf

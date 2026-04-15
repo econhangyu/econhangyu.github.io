@@ -1,7 +1,7 @@
 ---
 title: "Understanding Social Protection in Vulnerable Regions: Evidence from Ethiopia's PSNP"
 authors: "Zelalem Lijalem Assefa, Hang Yu"
-venue: "*China Economic Journal*, 19(1): 88–103"
+venue: "**China Economic Journal**, 19(1): 88–103"
 year: 2026
 category: published
 pdf: /files/publications/2026-ethiopia-psnp.pdf

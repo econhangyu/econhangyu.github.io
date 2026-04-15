@@ -29,7 +29,7 @@ author:
   location         : "Beijing, China"
   employer         : "Peking University"
   uri              : "https://econhangyu.github.io"
-  email            : "hyu@nsd.pku.edu.cn"
+  email            : "hangyu.economics@gmail.com"
 
   # Academic websites
   academia         :
@@ -37,7 +37,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=gv2LKkoAAAAJ"
   inspire-hep      :
   impactstory      :
-  orcid            :
+  orcid            : "https://orcid.org/0000-0002-2408-307X"
   semantic         :
   ssrn             :
   pubmed           :
@@ -50,7 +50,7 @@ author:
   bitbucket        :
   codepen          :
   dribbble         :
-  github           : "econhangyu"
+  github           :
   kaggle           :
   stackoverflow    :
 

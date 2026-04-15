@@ -29,14 +29,14 @@ I study how behavioral constraints and program delivery shape economic outcomes 
 
 ## Working Papers
 
-<ul class="pub-list pub-list-unnumbered">
+<ol class="pub-list">
 {% assign wps = site.publications | where: "category", "working" | sort: "year" | reverse %}
 {% for post in wps %}{% include publication-entry.html post=post %}{% endfor %}
-</ul>
+</ol>
 
 ## Selected Works in Progress
 
-<ul class="pub-list pub-list-unnumbered">
+<ol class="pub-list">
 {% assign wips = site.publications | where: "category", "wip" | sort: "sort_order" %}
 {% for post in wips %}{% include publication-entry.html post=post %}{% endfor %}
-</ul>
+</ol>
