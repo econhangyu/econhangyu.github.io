@@ -1,5 +1,31 @@
 /* Custom site styles. Loaded after main.css via _includes/head.html. */
 
+/* --- Modern font (Inter) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body,
+.page,
+.page__content,
+.page__title,
+.sidebar,
+.masthead,
+.author__name,
+.author__bio,
+.author__urls,
+.greedy-nav,
+.greedy-nav .visible-links,
+.greedy-nav__toggle,
+input,
+button,
+select,
+textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 /* --- Publication list containers --- */
 
 ol.pub-list,
@@ -52,20 +78,13 @@ ol.pub-list li::marker {
   font-weight: 500;
 }
 
-/* Hover-revealed extras (replication, registry, media, etc.) */
+/* Always-visible extras (replication, registry, media, etc.) */
 .pub-hover-links {
   display: inline-flex;
   gap: 0.4em;
   margin-left: 0.5em;
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out;
   font-size: 0.82em;
   vertical-align: baseline;
-}
-
-.pub-entry:hover .pub-hover-links,
-.pub-entry:focus-within .pub-hover-links {
-  opacity: 1;
 }
 
 .pub-hover-links a {
@@ -81,11 +100,6 @@ ol.pub-list li::marker {
   color: #0969da;
   border-color: #0969da;
   background: #eef2f7;
-}
-
-/* Touch devices: always show the extras since there's no hover. */
-@media (hover: none) {
-  .pub-hover-links { opacity: 1; }
 }
 
 /* --- Inline more/less toggle --- */
