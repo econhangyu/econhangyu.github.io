@@ -25,16 +25,16 @@ author:
   avatar           : "profile.png"
   name             : "Hang Yu"
   pronouns         :
-  bio              : "Development economist. Field experiments in Sub-Saharan Africa on health, program delivery, and labor markets."
+  bio              : "Field experiments on health, service delivery, and household behavior in Sub-Saharan Africa."
   location         : "Beijing, China"
   employer         : "Peking University"
-  uri              : "https://econhangyu.com"
+  uri              : "https://econhangyu.github.io"
   email            : "hyu@nsd.pku.edu.cn"
 
   # Academic websites
   academia         :
   arxiv            :
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=gv2LKkoAAAAJ"
   inspire-hep      :
   impactstory      :
   orcid            :

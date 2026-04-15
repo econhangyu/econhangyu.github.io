@@ -7,17 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am an Assistant Professor of Economics at the National School of Development, Peking University.
+I am an Assistant Professor of Economics at the National School of Development, Peking University. My research as a development economist examines how people in low-income settings make decisions under poverty, and why development programs often fall short in practice. I combine field experiments, original data, and close engagement with real-world programs, primarily in Sub-Saharan Africa.
 
-My research as a development economist examines how people in low-income settings make decisions under poverty, and why development programs often fall short in practice.
+My work studies health, service delivery, and household responses to shocks, and more recently the impacts of artificial intelligence on labor markets. Across contexts, I focus on how individual behavior and organizational design jointly shape development outcomes.
 
-I combine field experiments, original data, and close engagement with real-world programs, primarily in Sub-Saharan Africa.
-
-My work studies health, service delivery, and household responses to shocks, and more recently the impacts of artificial intelligence on labor markets.
-
-Across contexts, I focus on how individual behavior and organizational design jointly shape development outcomes.
-
-**Contact**: hyu [at] nsd.pku.edu.cn  ·  hangyu.economics [at] gmail.com
+**Contact**: hangyu.economics [at] gmail.com  ·  hyu [at] nsd.pku.edu.cn
 
 [Google Scholar](https://scholar.google.com/citations?user=gv2LKkoAAAAJ) · [CV]({{ base_path }}/files/cv.docx) · [VoxDev profile](https://voxdev.org/hang-yu) · [Mozambique research](https://fordschool.umich.edu/mozambique-research) · [YouTube](https://www.youtube.com/channel/UCOrtvDVlCLuhPNCUs-xqAcQ) · [CGHE at Michigan](https://globalhealthequity.umich.edu/membership/members/yu)
 
