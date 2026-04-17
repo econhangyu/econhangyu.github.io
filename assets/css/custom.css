@@ -386,3 +386,45 @@ ul.course-list li {
   margin-top: 0.4em;
   line-height: 1.4;
 }
+
+/* --- Dark mode overrides --- */
+
+html[data-theme="dark"] .pub-description {
+  color: #e0e0e0;
+}
+
+html[data-theme="dark"] .pub-expanded {
+  background: #3a3a3a;
+  border-left-color: #666;
+}
+
+html[data-theme="dark"] .pub-image {
+  background: #3a3a3a;
+}
+
+html[data-theme="dark"] .pub-title-link,
+html[data-theme="dark"] .page__content .pub-entry .pub-title-link {
+  color: #5ba3d9;
+}
+
+html[data-theme="dark"] .pub-title-link:hover,
+html[data-theme="dark"] .page__content .pub-entry .pub-title-link:hover {
+  color: #7fbfee;
+}
+
+html[data-theme="dark"] .pub-hover-links a {
+  color: #aaa;
+}
+
+html[data-theme="dark"] .pub-more,
+html[data-theme="dark"] .pub-less {
+  color: #aaa;
+}
+
+html[data-theme="dark"] .page__content h2 {
+  border-bottom-color: #888;
+}
+
+html[data-theme="dark"] .gallery-item figcaption {
+  color: #ccc;
+}
