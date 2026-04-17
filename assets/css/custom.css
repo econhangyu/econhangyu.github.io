@@ -100,7 +100,7 @@ ol.pub-list li::marker {
 /* Title rendered as plain (non-bold) hyperlink — no underline at rest. */
 .page__content .pub-entry .pub-title-link,
 .pub-title-link {
-  color: #0a2540;
+  color: #1a4f8b;
   text-decoration: none;
   border-bottom: none !important;
   font-weight: 500;
@@ -195,12 +195,14 @@ details.pub-details[open] summary .pub-less {
 }
 
 .pub-image-wrap {
-  flex: 0 0 33%;
-  max-width: 33%;
+  flex: 0 0 160px;
+  width: 160px;
 }
 
 .pub-image {
-  max-width: 100%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
   display: block;
   border-radius: 3px;
 }
