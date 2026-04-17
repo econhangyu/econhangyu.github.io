@@ -188,12 +188,25 @@ details.pub-details[open] summary .pub-less {
   border-left: 3px solid #d0d7de;
 }
 
+.pub-expanded-inner {
+  display: flex;
+  gap: 1.2em;
+  align-items: flex-start;
+}
+
+.pub-image-wrap {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
 .pub-image {
   max-width: 100%;
-  max-height: 280px;
   display: block;
-  margin: 0 auto 0.7em auto;
   border-radius: 3px;
+}
+
+.pub-description-wrap {
+  flex: 1;
 }
 
 .pub-description {
@@ -201,6 +214,17 @@ details.pub-details[open] summary .pub-less {
   line-height: 1.55;
   color: #333;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .pub-expanded-inner {
+    flex-direction: column;
+  }
+  .pub-image-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 0.7em;
+  }
 }
 
 /* --- Page headers --- */
