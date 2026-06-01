@@ -18,8 +18,8 @@ My work studies health, service delivery, and household responses to shocks, and
 
 ## Recent
 
+- **2026-05** — *Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data* published in *China Economic Quarterly*, 26(3): 874–894.
 - **2026-04** — New working paper: *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* (with Stolove, Yang, Riddell, Mahumane).
-- **2026-03** — *Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data* conditionally accepted at *China Economic Quarterly*.
 - **2026-01** — *Understanding Social Protection in Vulnerable Regions: Evidence from Ethiopia's PSNP* (with Assefa) published in *China Economic Journal*, 19(1): 88–103.
 
 <!-- ## Upcoming — hidden until content is ready -->
