@@ -24,5 +24,5 @@ My work studies health, service delivery, and household responses to shocks, and
 
 ## Upcoming
 
-- **Jun 18–19, 2026** — Meet me in Lisbon! I'll present *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* at the [2026 NOVAFRICA Conference on Economic Development](https://novafrica.org/research/2026-novafrica-conference-on-economic-development/) (Nova SBE).
-- **Jul 3–4, 2026** — Headed to Beijing next — come find me at the [Global South Development Conference 2026](https://www.isscad.pku.edu.cn/news/35f41bbf93014b2aa4de673b0a4c1e2d.htm) (ISSCAD, Peking University), where I'll present *Livelihoods and Recovery After Cyclone Idai: Short- and Long-Run Household Evidence from Mozambique*.
+- **Jun 18–19, 2026** — Catch me in Lisbon, where I'll present *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* at the [2026 NOVAFRICA Conference on Economic Development](https://novafrica.org/research/2026-novafrica-conference-on-economic-development/) (Nova SBE).
+- **Jul 3–4, 2026** — Catch me near Beijing, where I'll present *Livelihoods and Recovery After Cyclone Idai: Short- and Long-Run Household Evidence from Mozambique* at the [Global South Development Conference 2026](https://www.isscad.pku.edu.cn/news/35f41bbf93014b2aa4de673b0a4c1e2d.htm) (ISSCAD, Peking University).
