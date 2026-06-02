@@ -19,7 +19,10 @@ My work studies health, service delivery, and household responses to shocks, and
 ## Recent
 
 - **2026-05** — *Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data* published in *China Economic Quarterly*, 26(3): 874–894.
+- **2026-05** — Presented work in progress *Returns to Information in Hiring for Health Service Delivery* at the [Michigan Conference on Development Economics (MDev)](https://devecon.umich.edu/mdev-2026/), University of Michigan.
 - **2026-04** — New working paper: *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* (with Stolove, Yang, Riddell, Mahumane).
-- **2026-01** — *Understanding Social Protection in Vulnerable Regions: Evidence from Ethiopia's PSNP* (with Assefa) published in *China Economic Journal*, 19(1): 88–103.
 
-<!-- ## Upcoming — hidden until content is ready -->
+## Upcoming
+
+- **Jun 18–19, 2026** — Presenting *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* at the [2026 NOVAFRICA Conference on Economic Development](https://novafrica.org/research/2026-novafrica-conference-on-economic-development/), Nova SBE, Lisbon.
+- **Jul 3–4, 2026** — Presenting *Livelihoods and Recovery After Cyclone Idai: Short- and Long-Run Household Evidence from Mozambique* at the [Global South Development Conference 2026](https://www.isscad.pku.edu.cn/news/35f41bbf93014b2aa4de673b0a4c1e2d.htm), ISSCAD, Peking University.
