@@ -4,6 +4,8 @@ authors: "Hang Yu ⓡ Jared Stolove ⓡ Dean Yang ⓡ James Riddell IV ⓡ Arlet
 venue: "Working paper"
 year: 2026
 category: working
+sort_order: 2
+status: "In submission"
 pdf: /files/working-papers/2026-wp-art-incentives.pdf
 registry: https://clinicaltrials.gov/ct2/show/NCT03618511
 registry_label: ClinicalTrials.gov

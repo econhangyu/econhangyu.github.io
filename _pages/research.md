@@ -30,7 +30,7 @@ I study how behavioral constraints and program delivery shape economic outcomes 
 ## Working Papers
 
 <ol class="pub-list">
-{% assign wps = site.publications | where: "category", "working" | sort: "year" | reverse %}
+{% assign wps = site.publications | where: "category", "working" | sort: "sort_order" %}
 {% for post in wps %}{% include publication-entry.html post=post %}{% endfor %}
 </ol>
 
