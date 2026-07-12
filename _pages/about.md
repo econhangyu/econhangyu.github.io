@@ -18,7 +18,7 @@ My work studies health, service delivery, and household responses to shocks, and
 
 ## Recent
 
-- **2026-07** — *Motivate Future Doctors: Evidence from a Large-Scale Online Experiment in China* (with Li, Ma, Wu, and Ye) received a Review & Resubmit at *China Economic Review*.
+- **2026-07** — *Motivate Future Doctors: Evidence from a Large-Scale Online Experiment in China* (with Li, Ma, Wu, and Ye) received a Revise & Resubmit at *China Economic Review*.
 - **2026-05** — *Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data* published in *China Economic Quarterly*, 26(3): 874–894.
 - **2026-05** — Presented work in progress *Returns to Information in Hiring for Health Service Delivery* at the [Michigan Conference on Development Economics (MDev)](https://devecon.umich.edu/mdev-2026/), University of Michigan.
 - **2026-04** — New working paper: *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* (with Stolove, Yang, Riddell, Mahumane).

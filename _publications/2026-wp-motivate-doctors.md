@@ -5,5 +5,5 @@ venue: "Working paper"
 year: 2026
 category: working
 sort_order: 1
-status: "Review & Resubmit at China Economic Review"
+status: "Revise & Resubmit at China Economic Review"
 ---
