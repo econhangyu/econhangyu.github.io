@@ -325,17 +325,6 @@ ul.course-list li {
   margin: 0.4em 0 0.8em 0;
 }
 
-/* Prominent standalone CV button on the homepage */
-.home-cv-line {
-  margin: 1em 0 0.6em 0;
-}
-
-.home-cv-btn {
-  font-size: 1.05em;
-  font-weight: 500;
-  padding: 0.6em 1.3em;
-}
-
 .cv-embed-wrap {
   width: 100%;
   margin-bottom: 1em;
