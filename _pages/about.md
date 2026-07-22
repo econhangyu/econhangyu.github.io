@@ -8,11 +8,11 @@ redirect_from:
 
 I am an Assistant Professor of Economics at the National School of Development, Peking University. My research as a development economist examines how people in low-income settings make decisions under poverty, and why development programs often fall short in practice. I combine field experiments, original data, and close engagement with real-world programs, primarily in Sub-Saharan Africa.
 
-My work studies health, service delivery, and household responses to shocks, and more recently the impacts of artificial intelligence on labor markets. Across contexts, I focus on how individual behavior and organizational design jointly shape development outcomes.
+My work studies health, service delivery, and household responses to shocks. A growing part of it measures how artificial intelligence is reshaping work: with coauthors I built a task-based index of occupational exposure to large language models for China from 1.25 million job postings, released it as [public data](https://nsd.pku.edu.cn/xzyj/kyfb/zsfb/ai/542352.htm), and use it to trace AI's effects on labor demand and on the quality of job matching. Across contexts, I focus on how individual behavior and organizational design jointly shape development outcomes.
 
 **Contact**: hangyu.economics [at] gmail.com  ·  hyu [at] nsd.pku.edu.cn
 
-[Google Scholar](https://scholar.google.com/citations?user=gv2LKkoAAAAJ) · [CV]({{ base_path }}/files/cv.pdf) · [VoxDev profile](https://voxdev.org/hang-yu) · [Mozambique research](https://fordschool.umich.edu/mozambique-research) · [YouTube](https://www.youtube.com/channel/UCOrtvDVlCLuhPNCUs-xqAcQ) · [CGHE at Michigan](https://globalhealthequity.umich.edu/membership/members/yu)
+[Google Scholar](https://scholar.google.com/citations?user=gv2LKkoAAAAJ) · [CV]({{ base_path }}/files/cv.pdf) · [中文简历]({{ base_path }}/files/cv-cn.pdf) · [LinkedIn](https://www.linkedin.com/in/hang-yu-59b39b19a) · [VoxDev profile](https://voxdev.org/hang-yu) · [Mozambique research](https://fordschool.umich.edu/mozambique-research) · [YouTube](https://www.youtube.com/channel/UCOrtvDVlCLuhPNCUs-xqAcQ) · [CGHE at Michigan](https://globalhealthequity.umich.edu/membership/members/yu)
 
 ---
 
@@ -20,7 +20,6 @@ My work studies health, service delivery, and household responses to shocks, and
 
 - **2026-07** — *Motivate Future Doctors: Evidence from a Large-Scale Online Experiment in China* (with Li, Ma, Wu, and Ye) received a Revise & Resubmit at *China Economic Review*.
 - **2026-05** — *Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data* published in *China Economic Quarterly*, 26(3): 874–894.
-- **2026-05** — Presented work in progress *Returns to Information in Hiring for Health Service Delivery* at the [Michigan Conference on Development Economics (MDev)](https://devecon.umich.edu/mdev-2026/), University of Michigan.
 - **2026-04** — New working paper: *When Incentives Aren't Enough: Evidence on Inattention and Imperfect Memory from HIV Medication Adherence* (with Stolove, Yang, Riddell, Mahumane).
 
 <!--

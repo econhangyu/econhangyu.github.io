@@ -1,5 +1,6 @@
 ---
 title: "Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data"
+title_cn: "人工智能技术进步对劳动力市场错配的缓解：来自“岗位—求职者”匹配数据的证据"
 authors: "Hang Yu, Hongbo Li, Dandan Zhang, Runbo Zhang, Qiang Li"
 venue: "**China Economic Quarterly** (经济学季刊), 26(3): 874–894 (in Chinese)"
 year: 2026

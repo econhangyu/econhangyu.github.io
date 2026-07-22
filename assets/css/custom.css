@@ -119,6 +119,11 @@ ol.pub-list li::marker {
   font-weight: 500;
 }
 
+/* Formal Chinese title for articles published in Chinese */
+.pub-title-cn {
+  color: #555;
+}
+
 /* Always-visible extras (replication, registry, media, etc.) */
 .pub-hover-links {
   display: inline-flex;
@@ -414,6 +419,10 @@ html[data-theme="dark"] .page__content .pub-entry .pub-title-link:hover {
 
 html[data-theme="dark"] .pub-hover-links a {
   color: #aaa;
+}
+
+html[data-theme="dark"] .pub-title-cn {
+  color: #bbb;
 }
 
 html[data-theme="dark"] .pub-more,
