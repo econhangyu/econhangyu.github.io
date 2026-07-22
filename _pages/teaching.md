@@ -32,11 +32,6 @@ author_profile: true
 </ul>
 </div>
 
-## Awards
-
-- **Third Prize, Peking University Young Faculty Teaching Skills Competition**, Humanities and Social Sciences Division, 2025 (北京大学青年教师教学基本功比赛人文社科类三等奖)
-- **Peking University Award for Excellence in Moral Education**, 2023 (北京大学德育优秀奖)
-
 ## Doctoral Advising
 
 - **Bure Cain** (Zimbabwe, Ph.D. 2026) — *Assessing the Relationship Between Economic Security, Cash Management Practices, and the State of Financial Inclusion in the Informal Sector of Harare.*
@@ -50,3 +45,8 @@ author_profile: true
 ## MPA Advising
 
 My MPA advisees at ISSCAD include **Joni Effeh Kwakye** (Ghana, 2026), **Warie Grace Maninare** (Papua New Guinea, 2026), **Bahta Ashenafi Menasbo** (Ethiopia, 2025), **David Jonathan Williams** (Sierra Leone, 2025), **Stevius Charles Mfuko** (Tanzania, 2024), and **Tuna Kaleinasho Pauline Coetzee** (Namibia, 2022).
+
+## Awards
+
+- **Third Prize, Peking University Young Faculty Teaching Skills Competition**, Humanities and Social Sciences Division, 2025
+- **Peking University Award for Excellence in Moral Education**, 2023

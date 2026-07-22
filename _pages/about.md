@@ -12,7 +12,9 @@ My work studies health, service delivery, and household responses to shocks. A g
 
 **Contact**: hangyu.economics [at] gmail.com  ·  hyu [at] nsd.pku.edu.cn
 
-[Google Scholar](https://scholar.google.com/citations?user=gv2LKkoAAAAJ) · [CV]({{ base_path }}/files/cv.pdf) · [中文简历]({{ base_path }}/files/cv-cn.pdf) · [LinkedIn](https://www.linkedin.com/in/hang-yu-59b39b19a) · [VoxDev profile](https://voxdev.org/hang-yu) · [Mozambique research](https://fordschool.umich.edu/mozambique-research) · [YouTube](https://www.youtube.com/channel/UCOrtvDVlCLuhPNCUs-xqAcQ) · [CGHE at Michigan](https://globalhealthequity.umich.edu/membership/members/yu)
+<p class="home-cv-line"><a href="{{ base_path }}/files/cv.pdf" class="cv-btn home-cv-btn">Curriculum Vitae (PDF)</a></p>
+
+[中文简历]({{ base_path }}/files/cv-cn.pdf) · [VoxDev profile](https://voxdev.org/hang-yu) · [Mozambique research](https://fordschool.umich.edu/mozambique-research) · [YouTube](https://www.youtube.com/channel/UCOrtvDVlCLuhPNCUs-xqAcQ) · [CGHE at Michigan](https://globalhealthequity.umich.edu/membership/members/yu)
 
 ---
 
