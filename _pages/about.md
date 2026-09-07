@@ -21,8 +21,8 @@ My work studies health, service delivery, and household responses to shocks. A g
 ## Recent
 
 - **2026-09** — New report: [*Perceived Exposure: What Young People in China Expect AI to Do to Their Jobs*](/reports/ai-perception/) — a pilot survey of 500 graduating students and 500 workers, readable in full on the site. [PDF](/files/reports/2026-ai-perception.pdf) · [appendix](/files/reports/2026-ai-perception-appendix.pdf)
+- **2026-08** — English versions are now available for both Chinese-language papers on AI and the labor market: *[The Measurement of AI Exposure and Its Impact on Labor Demand in China](/files/publications/2025-ai-exposure-china-EN.pdf)* (*Management World*) and *[Artificial Intelligence and the Alleviation of Labor Market Mismatch](/files/publications/2026-ai-mismatch-EN.pdf)* (*China Economic Quarterly*).
 - **2026-07** — *Motivate Future Doctors: Evidence from a Large-Scale Online Experiment in China* (with Li, Ma, Wu, and Ye) received a Revise & Resubmit at *China Economic Review*.
-- **2026-05** — *Artificial Intelligence and the Alleviation of Labor Market Mismatch: Evidence from Online Job Matching Data* published in *China Economic Quarterly*, 26(3): 874–894. [English version](/files/publications/2026-ai-mismatch-EN.pdf) now available.
 
 <!--
 ## Upcoming
