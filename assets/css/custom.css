@@ -449,3 +449,167 @@ html[data-theme="dark"] .page__content h2 {
 html[data-theme="dark"] .gallery-item figcaption {
   color: #ccc;
 }
+
+/* --- Long-form report pages (e.g. /reports/ai-perception/) --- */
+
+.page__content .report-subtitle {
+  font-size: 1.12em;
+  color: #555;
+  line-height: 1.45;
+  margin: -0.4em 0 0.5em 0;
+}
+
+.page__content .report-byline {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  font-size: 0.82em;
+  color: #888;
+  letter-spacing: 0.01em;
+  margin: 0 0 1.1em 0;
+}
+
+.page__content .report-downloads {
+  margin: 0 0 0.7em 0;
+}
+
+.page__content .report-downloads .cv-btn {
+  margin-right: 0.5em;
+}
+
+.page__content .report-note {
+  font-size: 0.82em;
+  color: #888;
+  line-height: 1.5;
+  margin: 0 0 2em 0;
+  padding-bottom: 1.4em;
+  border-bottom: 1px solid #e2e6ea;
+}
+
+/* Exhibits: full-width figure on a white plate so charts read the same in both themes */
+.page__content .report-figure {
+  margin: 2em 0 0.7em 0;
+  text-align: center;
+}
+
+.page__content .report-figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #fff;
+  border: 1px solid #e2e6ea;
+  border-radius: 3px;
+  padding: 0.6em;
+  box-sizing: border-box;
+}
+
+.page__content .report-caption {
+  font-size: 0.8em;
+  line-height: 1.55;
+  color: #555;
+  margin: 0 0 2.2em 0;
+}
+
+.page__content .report-caption strong {
+  color: #333;
+}
+
+/* Respondent pull quotes */
+.page__content blockquote {
+  border-left: 3px solid #d0d7de;
+  margin: 1.4em 0;
+  padding: 0.1em 0 0.1em 1.1em;
+  font-style: italic;
+  color: #444;
+}
+
+.page__content blockquote p {
+  margin-bottom: 0.35em;
+}
+
+.page__content blockquote p:last-child {
+  font-style: normal;
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 0;
+}
+
+/* Kramdown endnotes. Kramdown always appends the notes list at the very end of the
+   document, so the "Notes" label is a plain paragraph placed just above it. */
+.page__content .report-notes-label {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  font-size: 0.82em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 2.2em 0 0 0;
+}
+
+.page__content .footnotes {
+  margin-top: 0.6em;
+  font-size: 0.82em;
+  line-height: 1.55;
+  color: #555;
+}
+
+.page__content .footnotes ol {
+  padding-left: 1.3em;
+}
+
+.page__content .footnotes li {
+  margin-bottom: 0.5em;
+  line-height: 1.55;
+}
+
+.page__content sup[role="doc-noteref"] a,
+.page__content a.footnote {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.page__content .report-cite {
+  font-size: 0.8em;
+  color: #888;
+  line-height: 1.55;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .page__content .report-subtitle { color: #ccc; }
+html[data-theme="dark"] .page__content .report-byline,
+html[data-theme="dark"] .page__content .report-note,
+html[data-theme="dark"] .page__content .report-cite { color: #aaa; }
+html[data-theme="dark"] .page__content .report-note { border-bottom-color: #555; }
+html[data-theme="dark"] .page__content .report-figure img { border-color: #555; }
+html[data-theme="dark"] .page__content .report-caption { color: #ccc; }
+html[data-theme="dark"] .page__content .report-caption strong { color: #e8e8e8; }
+html[data-theme="dark"] .page__content blockquote {
+  border-left-color: #666;
+  color: #ddd;
+}
+html[data-theme="dark"] .page__content blockquote p:last-child { color: #aaa; }
+html[data-theme="dark"] .page__content .report-notes-label { color: #aaa; }
+html[data-theme="dark"] .page__content .footnotes { color: #ccc; }
+
+/* Report pages read long-form, so they get slightly larger type than the rest of
+   the site, and no rules under the section headings. The first heading ("Key
+   findings") keeps its rule, where it closes off the title/download block. */
+
+.report-page .page__content {
+  font-size: 1em;
+  line-height: 1.75;
+}
+
+.report-page .page__content h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 2em;
+}
+
+.report-page .page__content h2:first-of-type {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.25em;
+}
+
+html[data-theme="dark"] .report-page .page__content h2:first-of-type {
+  border-bottom-color: #888;
+}

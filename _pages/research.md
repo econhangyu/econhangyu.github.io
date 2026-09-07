@@ -40,3 +40,12 @@ I study how behavioral constraints and program delivery shape economic outcomes 
 {% assign wips = site.publications | where: "category", "wip" | sort: "sort_order" %}
 {% for post in wips %}{% include publication-entry.html post=post %}{% endfor %}
 </ol>
+
+## Reports
+
+Written for a general audience. Each links to a web version; the PDF and its statistical appendix are alongside.
+
+<ul class="pub-list pub-list-unnumbered">
+{% assign reports = site.publications | where: "category", "report" | sort: "sort_order" %}
+{% for post in reports %}{% include publication-entry.html post=post %}{% endfor %}
+</ul>
