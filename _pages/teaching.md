@@ -17,7 +17,7 @@ author_profile: true
 <div class="course-block">
 <p class="course-level">Doctoral</p>
 <ul class="course-list">
-<li>Development Economics, joint (2022, 2023, 2024, 2025, 2026)</li>
+<li>Development Economics, joint (2022, 2023, 2024, 2025, spring 2026)</li>
 <li>The Frontiers of the Economics of Artificial Intelligence, joint (2025)</li>
 <li>Development Economics (2021)</li>
 <li>Research Design for a Social Science Thesis (2022)</li>
@@ -27,7 +27,7 @@ author_profile: true
 <div class="course-block">
 <p class="course-level">Master of Public Administration (ISSCAD)</p>
 <ul class="course-list">
-<li>Statistics for Social Science Research (2022, 2023, 2024 spring, 2024 fall, 2025)</li>
+<li>Statistics for Social Science Research (2022, 2023, 2024 spring, 2024 fall, 2025, fall 2026)</li>
 <li>Development Theory and Policy (2022)</li>
 </ul>
 </div>
@@ -48,5 +48,6 @@ My MPA advisees at ISSCAD include **Joni Effeh Kwakye** (Ghana, 2026), **Warie G
 
 ## Awards
 
+- **Peking University Teaching Excellence Award**, 2026
 - **Third Prize, Peking University Young Faculty Teaching Skills Competition**, Humanities and Social Sciences Division, 2025
 - **Peking University Award for Excellence in Moral Education**, 2023

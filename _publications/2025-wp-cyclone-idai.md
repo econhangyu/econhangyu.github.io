@@ -4,7 +4,6 @@ authors: "James Allen IV, Hang Yu"
 year: 2025
 category: wip
 sort_order: 1
-status: "Ready to submit"
 description: "Do natural disasters generate persistent welfare losses or trigger adaptive occupational reallocation? Combining satellite-based best-track data on Cyclone Idai — one of Mozambique's most destructive disasters — with longitudinal household surveys, we exploit spatial variation in wind speed for causal identification. More heavily exposed households shifted from agriculture toward non-farm activities — small business, waged employment, and remittance-linked income — with greater use of the financial system. The findings illuminate how behavioral constraints and institutional capacity shape household responses when large shocks disrupt existing economic arrangements."
 image: /images/papers/idai.jpg
 ---
