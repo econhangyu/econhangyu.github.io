@@ -255,6 +255,12 @@ defaults:
       share: false
       comments: false
 
+  # Application-only working paper: link from the private CV, omit from sitemap.
+  - scope:
+      path: "files/working-papers/motivate-future-doctors.pdf"
+    values:
+      sitemap: false
+
 
 # Sass/SCSS
 sass:
