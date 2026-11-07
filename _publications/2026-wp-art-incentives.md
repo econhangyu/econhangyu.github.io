@@ -7,6 +7,8 @@ category: working
 sort_order: 2
 status: "In submission"
 pdf: /files/working-papers/2026-wp-art-incentives.pdf
+pdf_main: /files/working-papers/2026-wp-art-incentives-nber.pdf
+pdf_main_label: NBER working paper
 registry: https://clinicaltrials.gov/ct2/show/NCT03618511
 registry_label: ClinicalTrials.gov
 registry2: https://doi.org/10.1257/rct.3184-2.0
