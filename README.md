@@ -13,7 +13,14 @@ This README is the canonical project memory. Read it first if you are returning 
 
 ---
 
-## Current status (as of 2026-04-15)
+## Current status (as of 2026-11-07)
+
+- [x] Updated the ART adherence paper to the November 5, 2026 manuscript at the existing `/files/working-papers/2026-wp-art-incentives.pdf` URL. Keep this URL stable because it is linked from previously distributed CVs.
+- [x] Preserved the March 2026 NBER Working Paper 34917 at `/files/working-papers/2026-wp-art-incentives-nber.pdf`, linked by an **NBER working paper** button after the ART citation using the existing `pdf_main` and `pdf_main_label` fields.
+
+The checklist below records the earlier April 15 state and has not been re-audited as part of this paper update.
+
+## Historical status (as of 2026-04-15)
 
 The site is **functionally complete** — content populated, design iterated, all PDFs uploaded — and is **live at https://econhangyu.github.io**. Two things still pending:
 
@@ -421,4 +428,4 @@ Look at the *Current status* checklist at the top of this file. The unchecked it
 
 ---
 
-*Last updated: 2026-04-15. Update the status checklist and the "as of" date whenever the project state changes meaningfully. The decisions table is append-only — when the author changes their mind about something, add a row rather than edit history.*
+*Last updated: 2026-11-07. Update the status checklist and the "as of" date whenever the project state changes meaningfully. The decisions table is append-only — when the author changes their mind about something, add a row rather than edit history.*
